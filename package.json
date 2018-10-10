@@ -16,6 +16,7 @@
     "google-spreadsheet": "^2.0.5",
     "googleapis": "^33.0.0",
     "opn": "^5.3.0",
-    "promise": "^8.0.2"
+    "promise": "^8.0.2",
+    "rest-core": "git+http://git.ows.vn:10180/ows-lab/rest-core.git"
   }
 }

@@ -1,0 +1,29 @@
+definitions:
+  - STUDENT:
+      api: all
+      properties:
+        - name: studentId
+          type: string
+        - name: firstName
+          type: string
+        - name: lastName
+          type: string
+        - name: email
+          type: string
+        - name: numberPhone
+          type: string
+        - name: avatarUrl
+          type: string
+        - name: courseid
+          type: string
+  - COURSES:
+      api: all
+      properties:
+        - name: courseId
+          type: string
+        - name: courseName
+          type: string
+        - name: initDay
+          type: datetime
+        - name: endDay
+          type: datetime

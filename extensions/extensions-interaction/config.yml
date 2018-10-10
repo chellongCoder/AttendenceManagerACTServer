@@ -1,0 +1,26 @@
+modules:
+  - name: COURSES
+    sumary: API GET ALL COURSES
+    method: GET
+    path: /getAllCourses
+    source: getAllCourses.js
+  - name: STUDENT
+    sumary: API get all student
+    method: GET
+    path: /STUDENT
+    source: getAllStudent.js
+  - name: STUDENT
+    sumary: API GET STUDENT BY ID
+    method: GET
+    path: /STUDENTBYID
+    source: getStudentById.js
+  - name: STUDENT
+    sumary: API INSERT STUDENT BY ID
+    method: POST
+    path: /INSERTSTUDENT
+    source: insertStudent.js
+  - name: STUDENT
+    sumary: API GET STUDENT BY ID COURSE
+    method: POST
+    path: /StudentByIdCourse
+    source: getStudentByIdCourse.js

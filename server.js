@@ -32,6 +32,7 @@ function getInfoSheet() {
             if (!err) {
                 resolve(sheet);
             }
+            reject(info);
         })
     })
 }
@@ -46,6 +47,9 @@ function workingWithRows() {
         }, function (err, rows) {
             //  console.log('Read ' +rows);
             console.log(err, rows);
+            if(err) 
+                reject(rows);    
+            resolve(rows);
         });
     })
 }
@@ -77,7 +81,8 @@ function workingWithCells() {
             // cells[1].value = 2;
             // cells[2].formula = '=A1+B1';
             sheet.bulkUpdateCells(cells); //async
-
+            if(err) reject(cells);
+            resolve(cells);
         });
     })
 }
@@ -127,17 +132,26 @@ function setHeaders () {
 
 async function exec() {
     let result = await setAuth();
+    console.log('1');
     let sheet = await getInfoSheet();
-    
-    // let row = await workingWithRows();
-    // let cell = await workingWithCells();
-    let header = await setHeaders();
+    console.log('2');
+    let row = await workingWithRows();
+    console.log('3');
+    let cell = await workingWithCells();
+    console.log('4');
+    // let header = await setHeaders();
     // let createSheet = await managingSheets();
 
-    let addRow = await addRowSheets();
+    // let addRow = await addRowSheets();
 
 }
 
+// exec();
 
-// setAuth();
-exec();
+
+
+const RestCore = require('rest-core');
+
+const server = new RestCore(__dirname);
+
+server.start();

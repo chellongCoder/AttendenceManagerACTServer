@@ -1,0 +1,9 @@
+server:
+  port: 8080
+database:
+  host: 125.212.227.42
+  driver: mysql
+  user: root
+  port: 3336
+  password: toor
+  name: JAVA_WEB_02
