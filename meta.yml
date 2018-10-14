@@ -27,3 +27,12 @@ definitions:
           type: datetime
         - name: endDay
           type: datetime
+          
+  - AMIN:
+      api: all
+      properties:
+        - name : username
+          type : string
+        - name : password
+          type : string
+        

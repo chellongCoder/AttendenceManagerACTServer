@@ -24,3 +24,8 @@ modules:
     method: POST
     path: /StudentByIdCourse
     source: getStudentByIdCourse.js
+  - name : ADMIN
+    sumary : API GET ADMIN USER
+    method : POST
+    path: /getAdminUser
+    source : getAdminUser.js

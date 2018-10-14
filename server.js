@@ -151,7 +151,7 @@ async function exec() {
 
 
 const RestCore = require('rest-core');
-
+console.log('ok');
 const server = new RestCore(__dirname);
 
 server.start();
